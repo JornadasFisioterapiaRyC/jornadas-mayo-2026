@@ -28,7 +28,27 @@
 }
 
 @media (max-width: 540px) {
-  .header__logos { gap: 1.5rem; }
-  .header__logo { height: 36px; }
-  .header__logo--center { height: 44px; }
+  .header {
+    padding: 1.5rem 1rem;
+  }
+
+  .header__logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+  }
+
+  .header__logo {
+    height: 32px;
+    max-width: 40%;
+  }
+
+  .header__logo--center {
+    height: 40px;
+    max-width: 50%;
+    order: -1;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
