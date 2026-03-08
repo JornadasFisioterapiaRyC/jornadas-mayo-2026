@@ -1,0 +1,23 @@
+.footer {
+  background: var(--color-primary);
+  color: #ffffff;
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  margin-top: var(--space-3xl);
+}
+
+.footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.footer__text {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  margin-bottom: var(--space-xs);
+}
+
+.footer__year {
+  font-size: var(--font-size-xs);
+  opacity: 0.7;
+}

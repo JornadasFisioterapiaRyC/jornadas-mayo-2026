@@ -1,0 +1,70 @@
+.poster-card {
+  background: var(--color-bg-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.poster-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.poster-card__badge {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.poster-card__badge--research {
+  background: var(--color-research);
+}
+
+.poster-card__badge--pelvic {
+  background: var(--color-pelvic);
+}
+
+.poster-card__badge--advanced {
+  background: var(--color-advanced);
+}
+
+.poster-card__content {
+  padding: var(--space-lg);
+  flex: 1;
+}
+
+.poster-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.poster-card__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+.poster-card__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-primary-light);
+  border-top: 1px solid var(--color-border);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.poster-card__link:hover {
+  background-color: rgba(41, 128, 185, 0.05);
+  color: var(--color-primary);
+}

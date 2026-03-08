@@ -1,0 +1,25 @@
+.poster-grid__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-xl);
+}
+
+.poster-grid__empty {
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  padding: var(--space-3xl) var(--space-md);
+}
+
+.poster-grid__count {
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: var(--font-size-xs);
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 400px) {
+  .poster-grid__list {
+    grid-template-columns: 1fr;
+  }
+}
