@@ -1,0 +1,26 @@
+.cat-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.cat-nav__btn {
+  padding: 0.5rem 1.25rem;
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  letter-spacing: 0.03em;
+  border-bottom: 1.5px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.cat-nav__btn:hover {
+  color: var(--color-text);
+}
+
+.cat-nav__btn--active {
+  color: var(--color-dark);
+  border-bottom-color: var(--color-dark);
+}

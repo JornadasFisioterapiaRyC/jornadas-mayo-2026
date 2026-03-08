@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/posters-jornadas-2026-boceto/',
+  base: '/jornadas-mayo-2026/',
   build: {
     outDir: 'dist',
   },

@@ -1,0 +1,19 @@
+.poster-grid {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.poster-grid__empty {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+}
+
+.poster-grid__count {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+}
