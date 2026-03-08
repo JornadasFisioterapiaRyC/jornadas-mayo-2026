@@ -1,6 +1,7 @@
-.poster-grid {
-  max-width: 640px;
-  margin: 0 auto;
+.poster-grid__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .poster-grid__empty {
@@ -8,6 +9,7 @@
   padding: 3rem 0;
   color: var(--color-text-muted);
   font-size: var(--font-size-base);
+  grid-column: 1 / -1;
 }
 
 .poster-grid__count {
@@ -16,4 +18,16 @@
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
   letter-spacing: 0.04em;
+}
+
+@media (max-width: 900px) {
+  .poster-grid__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .poster-grid__list {
+    grid-template-columns: 1fr;
+  }
 }

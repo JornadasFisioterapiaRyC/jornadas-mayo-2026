@@ -14,6 +14,14 @@
   --color-accent: #8b7355;
   --color-border: #e0d8cf;
 
+  /* Category colors */
+  --color-cat-research: #5a7d9a;
+  --color-cat-research-bg: #eef3f7;
+  --color-cat-pelvic: #8a6b94;
+  --color-cat-pelvic-bg: #f3eef5;
+  --color-cat-advanced: #b08650;
+  --color-cat-advanced-bg: #f7f0e6;
+
   --font-serif: 'Cormorant Garamond', 'Georgia', serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 
