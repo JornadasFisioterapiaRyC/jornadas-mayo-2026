@@ -2,13 +2,17 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import Countdown from './components/Countdown/Countdown'
 import SearchBar from './components/SearchBar/SearchBar'
 import CategoryNav from './components/CategoryNav/CategoryNav'
 import PosterGrid from './components/PosterGrid/PosterGrid'
+import Speakers from './components/Speakers/Speakers'
 import Copyright from './components/Copyright/Copyright'
 import Footer from './components/Footer/Footer'
 import { posters } from './data/posters'
 import { categories } from './data/categories'
+import { speakers } from './data/speakers'
+import { eventDate } from './data/event'
 import { useFilteredPosters } from './hooks/useFilteredPosters'
 
 function App() {
@@ -21,6 +25,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Countdown targetDate={eventDate} />
         <section className="posters-section">
           <SearchBar value={query} onChange={setQuery} />
           <CategoryNav
@@ -30,6 +35,7 @@ function App() {
           />
           <PosterGrid posters={filtered} />
         </section>
+        <Speakers speakers={speakers} />
       </main>
       <Copyright />
       <Footer />

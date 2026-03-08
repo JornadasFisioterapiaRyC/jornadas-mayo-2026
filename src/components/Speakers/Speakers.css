@@ -1,0 +1,78 @@
+.speakers {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.speakers__title {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-display-sm);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--color-text);
+}
+
+.speakers__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.speakers__card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.speakers__avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--color-dark);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  letter-spacing: 0.04em;
+}
+
+.speakers__name {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.speakers__role {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-soft);
+}
+
+.speakers__institution {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.speakers__bio {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-soft);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .speakers__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .speakers__grid {
+    grid-template-columns: 1fr;
+  }
+}
