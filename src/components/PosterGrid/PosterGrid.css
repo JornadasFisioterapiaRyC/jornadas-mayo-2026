@@ -1,7 +1,8 @@
 .poster-grid__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  column-gap: 1.5rem;
+  /* Sin row-gap: el espaciado vertical lo dan los paddings de las secciones */
 }
 
 .poster-grid__empty {

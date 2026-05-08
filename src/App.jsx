@@ -15,10 +15,17 @@ import { speakers } from './data/speakers'
 import { eventDate } from './data/event'
 import { useFilteredPosters } from './hooks/useFilteredPosters'
 
+const tipos = [
+  { id: 'all', name: 'Todo' },
+  { id: 'poster', name: 'Póster' },
+  { id: 'comunicacion', name: 'Comunicación' },
+]
+
 function App() {
   const [category, setCategory] = useState('all')
+  const [tipo, setTipo] = useState('all')
   const [query, setQuery] = useState('')
-  const filtered = useFilteredPosters(posters, category, query)
+  const filtered = useFilteredPosters(posters, category, tipo, query)
 
   return (
     <div className="app">
@@ -32,6 +39,12 @@ function App() {
             categories={categories}
             selected={category}
             onSelect={setCategory}
+          />
+          <CategoryNav
+            categories={tipos}
+            selected={tipo}
+            onSelect={setTipo}
+            className="cat-nav--secondary"
           />
           <PosterGrid posters={filtered} />
         </section>

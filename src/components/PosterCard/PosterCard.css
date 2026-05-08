@@ -1,9 +1,9 @@
 .card {
-  padding: 1.75rem;
+  grid-row: span 6;
+  display: grid;
+  grid-template-rows: subgrid;
   border: 1px solid var(--color-border);
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
   transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
               transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow var(--transition);
@@ -13,41 +13,58 @@
   box-shadow: 0 4px 20px rgba(45, 52, 54, 0.06);
 }
 
-/* Tag / badge */
+/* 1 · Badges */
+.card__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 1.75rem 1.75rem 1rem;
+}
+
+.card__tipo {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  background: transparent;
+}
+
+.card__tipo--comunicacion {
+  color: #8b7355;
+  border-color: #c9b89a;
+  background: #faf6f0;
+}
+
 .card__tag {
-  display: inline-block;
-  align-self: flex-start;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.3rem 0.75rem;
+  padding: 0.25rem 0.65rem;
   border-radius: 20px;
-  margin-bottom: 1.25rem;
 }
 
-.card__tag--research {
-  color: var(--color-cat-research);
-  background: var(--color-cat-research-bg);
-}
+.card__tag--musculoesqueletica { color: var(--color-cat-musculoesqueletica); background: var(--color-cat-musculoesqueletica-bg); }
+.card__tag--geriatria          { color: var(--color-cat-geriatria);          background: var(--color-cat-geriatria-bg); }
+.card__tag--neurologia         { color: var(--color-cat-neurologia);         background: var(--color-cat-neurologia-bg); }
+.card__tag--hospitalaria       { color: var(--color-cat-hospitalaria);       background: var(--color-cat-hospitalaria-bg); }
+.card__tag--cardiorespiratoria { color: var(--color-cat-cardiorespiratoria); background: var(--color-cat-cardiorespiratoria-bg); }
+.card__tag--transversal        { color: var(--color-cat-transversal);        background: var(--color-cat-transversal-bg); }
 
-.card__tag--pelvic {
-  color: var(--color-cat-pelvic);
-  background: var(--color-cat-pelvic-bg);
-}
-
-.card__tag--advanced {
-  color: var(--color-cat-advanced);
-  background: var(--color-cat-advanced-bg);
-}
-
+/* 2 · Título — ocupa la fila 1fr; align-self:start ancla el texto arriba */
 .card__title {
   font-family: var(--font-serif);
-  font-size: var(--font-size-display-sm);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.35;
   color: var(--color-dark);
-  margin-bottom: 0.5rem;
+  padding: 0 1.75rem 0.6rem;
+  align-self: start;
   transition: color var(--transition);
 }
 
@@ -55,18 +72,30 @@
   color: var(--color-accent);
 }
 
-.card__desc {
-  font-size: var(--font-size-sm);
+/* 3 · Tipo de estudio */
+.card__meta {
+  font-size: 0.7rem;
   font-weight: 300;
-  color: var(--color-text-soft);
-  margin-bottom: 1.25rem;
-  line-height: 1.6;
-  flex: 1;
+  color: var(--color-text-muted);
+  text-transform: capitalize;
+  padding: 0 1.75rem 0.3rem;
+  align-self: start;
 }
 
+/* 4 · Autor */
+.card__autor {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--color-text);
+  padding: 0 1.75rem 0.75rem;
+  align-self: start;
+}
+
+/* 5 · Enlace */
 .card__link {
   display: inline-block;
-  align-self: flex-start;
+  justify-self: start;
+  align-self: start;
   font-size: var(--font-size-sm);
   font-weight: 400;
   color: var(--color-text);
@@ -74,8 +103,29 @@
   padding-bottom: 2px;
   border-bottom: 1px solid var(--color-border);
   transition: border-color var(--transition), color var(--transition);
+  margin: 0 0 1.1rem 1.75rem;
 }
 
 .card__link:hover {
   border-color: var(--color-dark);
+}
+
+/* 6 · Tags — padding-bottom crea el espacio visual entre filas de tarjetas */
+.card__etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 1rem 1.75rem 1.75rem;
+  align-content: flex-start;
+  align-self: start;
+}
+
+.card__chip {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--color-text-soft);
+  background: var(--color-cream);
+  border: 1px solid var(--color-cream-dark);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
 }

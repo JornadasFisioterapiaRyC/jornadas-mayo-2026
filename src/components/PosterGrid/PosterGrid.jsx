@@ -23,7 +23,7 @@ function PosterGrid({ posters }) {
         )}
       </div>
       <p className="poster-grid__count" aria-live="polite">
-        {posters.length} {posters.length === 1 ? 'poster' : 'posters'}
+        {posters.length} {posters.length === 1 ? 'trabajo' : 'trabajos'}
       </p>
     </section>
   )

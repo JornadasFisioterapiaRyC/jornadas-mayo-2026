@@ -6,6 +6,18 @@
   flex-wrap: wrap;
 }
 
+.cat-nav--secondary {
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+}
+
+.cat-nav--secondary .cat-nav__btn {
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 1rem;
+  color: var(--color-text-muted);
+}
+
 .cat-nav__btn {
   padding: 0.5rem 1.25rem;
   font-size: var(--font-size-sm);

@@ -1,6 +1,9 @@
 export const categories = [
   { id: 'all', name: 'Todo' },
-  { id: 'research', name: 'Investigacion Clinica' },
-  { id: 'pelvic', name: 'Fisioterapia Uroginecologica' },
-  { id: 'advanced', name: 'Tecnicas Avanzadas' },
+  { id: 'musculoesqueletica', name: 'Musculoesquelética' },
+  { id: 'geriatria', name: 'Geriatría' },
+  { id: 'neurologia', name: 'Neurología' },
+  { id: 'hospitalaria', name: 'Hospitalaria' },
+  { id: 'cardiorespiratoria', name: 'Cardiorrespiratorio' },
+  { id: 'transversal', name: 'Otros' },
 ]

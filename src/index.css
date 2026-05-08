@@ -15,12 +15,18 @@
   --color-border: #e0d8cf;
 
   /* Category colors */
-  --color-cat-research: #5a7d9a;
-  --color-cat-research-bg: #eef3f7;
-  --color-cat-pelvic: #8a6b94;
-  --color-cat-pelvic-bg: #f3eef5;
-  --color-cat-advanced: #b08650;
-  --color-cat-advanced-bg: #f7f0e6;
+  --color-cat-musculoesqueletica: #5a7d9a;
+  --color-cat-musculoesqueletica-bg: #eef3f7;
+  --color-cat-geriatria: #6b8e6b;
+  --color-cat-geriatria-bg: #eef5ee;
+  --color-cat-neurologia: #8a6b94;
+  --color-cat-neurologia-bg: #f3eef5;
+  --color-cat-hospitalaria: #b08650;
+  --color-cat-hospitalaria-bg: #f7f0e6;
+  --color-cat-cardiorespiratoria: #b05050;
+  --color-cat-cardiorespiratoria-bg: #f5eeee;
+  --color-cat-transversal: #7a8490;
+  --color-cat-transversal-bg: #f0f1f2;
 
   --font-serif: 'Cormorant Garamond', 'Georgia', serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;

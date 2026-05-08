@@ -1,8 +1,8 @@
 import './CategoryNav.css'
 
-function CategoryNav({ categories, selected, onSelect }) {
+function CategoryNav({ categories, selected, onSelect, className = '' }) {
   return (
-    <nav className="cat-nav" aria-label="Filtrar por categoria">
+    <nav className={`cat-nav ${className}`.trim()} aria-label="Filtrar por categoria">
       {categories.map((cat) => (
         <button
           key={cat.id}

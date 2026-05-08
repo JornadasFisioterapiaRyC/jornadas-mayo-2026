@@ -34,6 +34,9 @@ function Copyright() {
 
         <div className="copyright__citation">
           <span className="copyright__citation-label">Cita recomendada</span>
+          Si referencias alguno de estos trabajos en un artículo, presentación
+          o memoria, utiliza el siguiente formato:
+          <br /><br />
           Autor(es). (2026). <em>Titulo del poster</em>. Jornadas de
           Fisioterapia 2026, Hospital Universitario Ramon y Cajal, Madrid.
         </div>
