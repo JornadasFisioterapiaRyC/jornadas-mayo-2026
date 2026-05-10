@@ -1,114 +1,141 @@
-# Jornadas de Fisioterapia 2026 - Pósters
+# III Jornada Nacional de Fisioterapia en Atención Hospitalaria
 
-Aplicación React moderna para visualizar los pósters presentados en las Jornadas de Fisioterapia 2026 del Hospital Universitario Ramón y Cajal.
+Aplicación React + Vite para visualizar los pósters y comunicaciones presentados en las Jornadas de Fisioterapia 2026 del Hospital Universitario Ramón y Cajal.
 
-## 🚀 Desarrollo Local
+**URL en producción:** `https://jornadasfisioterapiaryc.github.io/jornadas-mayo-2026/`
 
-### Requisitos previos
-- Node.js (versión 16 o superior)
-- npm
+---
 
-### Instalación
+## Ramas del repositorio
+
+| Rama | Propósito |
+|------|-----------|
+| `redesign-v3` | **Producción.** GitHub Pages sirve desde la raíz de esta rama. Contiene el build compilado. |
+| `redesign-v3-dev` | **Desarrollo.** Misma base que `redesign-v3` pero con `index.html` apuntando a `src/main.jsx`. Usar para `npm run dev`. |
+| `main` | Proyecto original estático (antes de React). No tocar. |
+| `project_react` | Primera versión React. Referencia histórica. |
+| `gh-pages` | Rama legacy de GitHub Pages. Ya no se usa. |
+
+**Flujo de trabajo:**
+1. Desarrollar y probar en `redesign-v3-dev` con `npm run dev`
+2. Cuando los cambios estén listos, cambiar a `redesign-v3`, hacer el build y subir
+
+---
+
+## Desarrollo local
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/cimamor/posters-jornadas-2026-boceto.git
-cd posters-jornadas-2026-boceto
+# Asegurarse de estar en la rama de desarrollo
+git checkout redesign-v3-dev
 
-# Instalar dependencias
+# Instalar dependencias (solo la primera vez)
 npm install
 
 # Iniciar servidor de desarrollo
 npm run dev
 ```
 
-La aplicación estará disponible en `http://localhost:5173/posters-jornadas-2026-boceto/`
+La app estará en `http://localhost:5173/jornadas-mayo-2026/`
 
-## 📦 Construcción y Despliegue
+Para ver en modo móvil: DevTools del navegador → icono de móvil (`Ctrl+Shift+M` en Chrome/Firefox).
 
-### Build para producción
+---
+
+## Build y despliegue a producción
 
 ```bash
+# 1. Cambiar a la rama de producción
+git checkout redesign-v3
+
+# 2. Asegurarse de tener los últimos cambios de dev
+git merge redesign-v3-dev
+
+# 3. Compilar — genera index.html y assets/ en la raíz del proyecto
 npm run build
+
+# 4. Commit del build
+git add index.html assets/
+git commit -m "build: actualizar compilado para producción"
+
+# 5. Subir
+git push origin redesign-v3
 ```
 
-Esto generará los archivos estáticos en la carpeta `dist/`.
+GitHub Pages publica automáticamente en 1-2 minutos.
 
-### Despliegue a GitHub Pages
+### Por qué el build va a la raíz
 
-```bash
-npm run deploy
-```
-
-Este comando:
-1. Genera el build de producción
-2. Despliega automáticamente a GitHub Pages (rama `gh-pages`)
+`vite.config.js` tiene `outDir: '.'` y `base: '/jornadas-mayo-2026/'` porque GitHub Pages está configurado para servir desde la **raíz de la rama `redesign-v3`** (no desde `/docs`). Esto hace que `npm run build` sobreescriba `index.html` con la versión compilada. Por eso `redesign-v3-dev` existe: guarda el `index.html` de desarrollo (`<script src="/src/main.jsx">`) que Vite necesita para el servidor local.
 
 ### Configuración de GitHub Pages
 
-1. Ve a tu repositorio en GitHub
-2. Settings → Pages
-3. En "Source", selecciona la rama `gh-pages`
-4. La página estará disponible en: `https://cimamor.github.io/posters-jornadas-2026-boceto/`
+- Repositorio: `JornadasFisioterapiaRyC/jornadas-mayo-2026`
+- Settings → Pages → Source: **rama `redesign-v3`, carpeta `/` (raíz)**
 
-## 📁 Estructura del Proyecto
+---
+
+## Estructura del proyecto
 
 ```
-├── public/
-│   ├── img/           # Logos e imágenes
-│   └── posters/       # PDFs de los pósters
+├── assets/                  # JS y CSS compilados (generados por el build)
+├── img/                     # Logos (logo_jornadas.png, logo_huryc.jpg, logo_fibiohrc.jpg)
+├── posters/                 # PDFs de los pósters
+├── public/                  # Assets estáticos que Vite copia tal cual
 ├── src/
-│   ├── components/    # Componentes React
-│   │   ├── Header.jsx
-│   │   ├── Footer.jsx
-│   │   ├── PosterCard.jsx
-│   │   └── PosterGrid.jsx
-│   ├── data/          # Datos de los pósters
-│   │   └── posters.js
-│   ├── App.jsx        # Componente principal
-│   ├── App.css        # Estilos principales
-│   ├── main.jsx       # Punto de entrada
-│   └── index.css      # Estilos globales
-├── index.html         # HTML principal
-├── vite.config.js     # Configuración de Vite
-└── package.json       # Dependencias y scripts
+│   ├── components/
+│   │   ├── CategoryNav/     # Filtros de área y tipo (píldoras clicables)
+│   │   ├── Countdown/       # Cuenta atrás hasta el evento
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── Hero/
+│   │   ├── PosterCard/      # Tarjeta individual de cada trabajo
+│   │   ├── PosterGrid/      # Grid de tarjetas con subgrid
+│   │   ├── SearchBar/       # Búsqueda por texto
+│   │   └── Speakers/        # Sección de ponentes (desactivada en App.jsx)
+│   ├── data/
+│   │   ├── categories.js    # Áreas temáticas
+│   │   ├── event.js         # Fecha del evento para el countdown
+│   │   ├── posters.js       # Datos de todos los trabajos
+│   │   └── speakers.js      # Datos de ponentes
+│   ├── hooks/
+│   │   ├── useCountdown.js
+│   │   ├── useFilteredPosters.js
+│   │   └── useReveal.js     # Animación de entrada al hacer scroll
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css            # Variables de diseño (tokens, tipografía, colores)
+│   └── main.jsx
+├── index.html               # En redesign-v3: compilado. En redesign-v3-dev: apunta a src/main.jsx
+├── vite.config.js
+└── load_data.json           # Datos originales de pósters (referencia, no usado directamente)
 ```
 
-## 🎨 Características
+---
 
-- ✨ Interfaz moderna y responsive
-- 🎯 Filtrado por categorías
-- 📱 Diseño mobile-first
-- ⚡ Carga rápida con Vite
-- 🎨 Animaciones suaves
-- ♿ Accesible
+## Añadir o editar trabajos
 
-## 📝 Añadir Nuevos Pósters
+Los datos están en `src/data/posters.js`. Cada entrada tiene esta forma:
 
-1. Agrega el archivo PDF en `public/posters/`
-2. Edita `src/data/posters.js` y añade el nuevo póster:
-
-```javascript
+```js
 {
-  id: 7,
-  title: 'Título del Póster',
-  category: 'research', // research, pelvic, o advanced
-  file: '/posters/007_nombre_archivo.pdf',
-  description: 'Descripción breve'
+  id: 1,
+  title: 'Título del trabajo',
+  category: 'musculoesqueletica', // ver categories.js para las opciones
+  tipo: 'poster',                 // 'poster' | 'comunicacion'
+  tipo_estudio: 'Revisión sistemática',
+  autor: 'García López, M.',
+  file: '/jornadas-mayo-2026/posters/001_nombre.pdf', // null si no está disponible aún
+  etiquetas: ['rodilla', 'dolor crónico'],
 }
 ```
 
-3. Guarda y la aplicación se actualizará automáticamente
+Los PDFs van en la carpeta `posters/` de la raíz del repo.
 
-## 🛠️ Tecnologías
+---
 
-- **React 19** - Librería UI
-- **Vite 7** - Build tool
-- **GitHub Pages** - Hosting
-- **CSS3** - Estilos con variables y animaciones
+## Tecnologías
 
-## 📄 Licencia
-
-© 2026 - Jornadas de Fisioterapia. Todos los derechos reservados.
-
-Los pósters y materiales son propiedad intelectual de sus respectivos autores.
+- **React 19** + **Vite 7**
+- CSS puro con variables (`index.css`) — sin frameworks de estilos
+- CSS Grid con `subgrid` para alinear tarjetas entre filas
+- GitHub Pages para el hosting
