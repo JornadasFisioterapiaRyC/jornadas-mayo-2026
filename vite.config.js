@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/jornadas-mayo-2026/',
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
   },
 })
