@@ -1,0 +1,270 @@
+{
+  "data": [
+    {
+      "id": "001_540a525a-78b1-4314-bafb-afe29305ba04",
+      "titulo": "Fisioterapia en cicatriz abdominal tras colgajo perforante de la arteria epigástrica inferior profunda",
+      "categoria": "Musculoesquelética / Traumatología",
+      "tipo": "poster",
+      "tipo_estudio": "caso clínico",
+      "autor": "Carmen Núñez García",
+      "etiquetas": [
+        "cicatrices",
+        "terapia manual",
+        "hospitalario",
+        "oncologia"
+      ]
+    },
+    {
+      "id": "002_88d35be1-391e-4421-8fca-bdf6e75ee68a",
+      "titulo": "Impacto de una Escuela de Prótesis de rodilla en la modificación de creencias y expectativas",
+      "categoria": "Musculoesquelética / Traumatología",
+      "tipo": "poster",
+      "tipo_estudio": "estudio analítico",
+      "autor": "Héctor Arribas Pérez",
+      "etiquetas": [
+        "educación al paciente",
+        "prótesis",
+        "ejercicio terapéutico",
+        "hospitalario"
+      ]
+    },
+    {
+      "id": "003_1ed89d87-dcaf-4593-81ad-9248093f5a92",
+      "titulo": "Efectos del entrenamiento con exoesqueleto en pacientes con lesión medular: revisión de la evidencia reciente",
+      "categoria": "Neurología",
+      "tipo": "poster",
+      "tipo_estudio": "revisión",
+      "autor": "José Javier López Marcos",
+      "etiquetas": [
+        "exoesqueleto",
+        "rehabilitación robótica",
+        "lesión medular"
+      ]
+    },
+    {
+      "id": "004_aa647890-21ff-4efe-a8df-80d91dae7078",
+      "titulo": "La respiración controlada mejora la variabilidad de la frecuencia cardíaca en adultos con mieloma múltiple",
+      "categoria": "Cardiorrespiratorio",
+      "tipo": "comunicacion",
+      "tipo_estudio": "* pendiente de revisar",
+      "autor": "Isidro Fernández López",
+      "etiquetas": [
+        "oncologia",
+        "respiratorio",
+        "variabilidad cardíaca",
+        "ejercicio terapéutico"
+      ]
+    },
+    {
+      "id": "005_fc23f1ee-f755-43d2-949b-bf10fc552bf0",
+      "titulo": "Evaluación del equilibrio con tests accesibles para prevenir caídas en adultos mayores: revisión sistemática",
+      "categoria": "Geriatría",
+      "tipo": "poster",
+      "tipo_estudio": "revisión sistemática",
+      "autor": "Ottavia Maugeri",
+      "etiquetas": [
+        "prevención",
+        "caídas",
+        "evaluación funcional",
+        "adulto mayor"
+      ]
+    },
+    {
+      "id": "006_04eb7537-fdcb-4d4a-81e5-ed62a351ab65",
+      "titulo": "Aplicación del mapa de experiencia del paciente respiratorio crónico en la consulta de fisioterapia respiratoria",
+      "categoria": "Fisioterapia hospitalaria / procesos",
+      "tipo": "poster",
+      "tipo_estudio": "estudio descriptivo",
+      "autor": "María Victoria Castrillo Fraile",
+      "etiquetas": [
+        "respiratorio",
+        "experiencia del paciente",
+        "hospitalario",
+        "crónico"
+      ]
+    },
+    {
+      "id": "007_17191fb7-4525-4939-bb7d-aaa92accadf9",
+      "titulo": "Efectos de las técnicas de inducción miofascial cervicales y terapia craneosacra sobre las restricciones de la cadena posteromedial en pacientes adultos con daño cerebral adquirido",
+      "categoria": "Neurología",
+      "tipo": "poster",
+      "tipo_estudio": "ensayo clínico (ECA)",
+      "autor": "Alicia Hernando Rosado",
+      "etiquetas": [
+        "terapia manual",
+        "daño cerebral adquirido",
+        "tratamiento"
+      ]
+    },
+    {
+      "id": "008_1844c01e-e1ba-4ca5-b7b8-5c10c1c4c2b2",
+      "titulo": "Escuela de pacientes candidatos a cirugía abdominal: protocolo de implementación y evaluación",
+      "categoria": "Fisioterapia hospitalaria / procesos",
+      "tipo": "poster",
+      "tipo_estudio": "estudio descriptivo",
+      "autor": "Alicia González Mazo",
+      "etiquetas": [
+        "educación al paciente",
+        "hospitalario",
+        "cirugía"
+      ]
+    },
+    {
+      "id": "009_dc7bc3b7-f187-44c1-a948-c7969bb073e1",
+      "titulo": "Impacto de la rehabilitación robótica en la recuperación funcional de pacientes neurooncológicos",
+      "categoria": "Neurología",
+      "tipo": "poster",
+      "tipo_estudio": "estudio cuasi-experimental",
+      "autor": "Ester Carpio Calatayud",
+      "etiquetas": [
+        "rehabilitación robótica",
+        "oncologia",
+        "evaluación funcional"
+      ]
+    },
+    {
+      "id": "010_91cacd3f-cde4-4f4e-ae77-9e4661cb2b6f",
+      "titulo": "Capacidad funcional y calidad de vida en cardiopatía isquémica en rehabilitación cardíaca: estudio descriptivo preliminar",
+      "categoria": "Cardiorrespiratorio",
+      "tipo": "comunicacion",
+      "tipo_estudio": "estudio descriptivo",
+      "autor": "Alberto Martos Monedero",
+      "etiquetas": [
+        "rehabilitación cardíaca",
+        "calidad de vida",
+        "ejercicio terapéutico"
+      ]
+    },
+    {
+      "id": "011_b4df1b4c-7cb5-49a5-82e1-7eac9e1fbcd8",
+      "titulo": "Fisioterapia integrada en el tratamiento hospitalario de los trastornos de conducta alimentaria",
+      "categoria": "Fisioterapia hospitalaria / procesos",
+      "tipo": "poster",
+      "tipo_estudio": "estudio pre-post intervención",
+      "autor": "Mónica Robles López",
+      "etiquetas": [
+        "hospitalario",
+        "intervención multidisciplinar",
+        "trastorno de conducta alimentaria"
+      ]
+    },
+    {
+      "id": "012_23893222-1ff7-4932-bf4c-d9fecb984dbc",
+      "titulo": "Tratamiento de la mano quemada injertada con vendaje cohesivo precoz",
+      "categoria": "Musculoesquelética / Traumatología",
+      "tipo": "poster",
+      "tipo_estudio": "serie de casos",
+      "autor": "Sara Sastre Parro",
+      "etiquetas": [
+        "quemados",
+        "cicatrices",
+        "vendaje"
+      ]
+    },
+    {
+      "id": "013_82e5ff2b-27a4-4fbc-b0a3-735343a22308",
+      "titulo": "Competencias emocionales en la atención sanitaria de fisioterapia",
+      "categoria": "Otros / Transversal",
+      "tipo": "poster",
+      "tipo_estudio": "estudio descriptivo",
+      "autor": "Francisco Carrascosa Salcedo",
+      "etiquetas": [
+        "habilidades clínicas",
+        "comunicación",
+        "humanización"
+      ]
+    },
+    {
+      "id": "014_a94b1a7b-a1c1-467f-a5ae-63cb880dc429",
+      "titulo": "Impacto de la fuerza de agarre (handgrip strength) en el destete del paciente crítico: revisión bibliográfica",
+      "categoria": "Cardiorrespiratorio",
+      "tipo": "poster",
+      "tipo_estudio": "revisión",
+      "autor": "Sheila Narros Navas",
+      "etiquetas": [
+        "paciente crítico",
+        "evaluación funcional",
+        "fuerza de prensión"
+      ]
+    },
+    {
+      "id": "015_2ed2945a-0a2f-487f-b966-07312f9b3883",
+      "titulo": "Satisfacción del paciente en tratamiento con parafina: estudio piloto",
+      "categoria": "Otros / Transversal",
+      "tipo": "poster",
+      "tipo_estudio": "estudio descriptivo",
+      "autor": "María Dolores Reboredo Redondas",
+      "etiquetas": [
+        "satisfacción del paciente",
+        "terapia física",
+        "evaluación"
+      ]
+    },
+    {
+      "id": "016_e8ab8234-d673-4305-8d69-26d425fcaa8a",
+      "titulo": "Percepción subjetiva y evolución funcional tras prótesis total de rodilla: serie de 10 casos.",
+      "categoria": "Musculoesquelética / Traumatología",
+      "tipo": "poster",
+      "tipo_estudio": "serie de casos",
+      "autor": "José Calvo Paniagua",
+      "etiquetas": [
+        "prótesis",
+        "evaluación funcional",
+        "calidad de vida"
+      ]
+    },
+    {
+      "id": "017_023600c8-7b02-4612-a573-714f3d3c339b",
+      "titulo": "Impacto del síndrome genitourinario de la menopausia inducida en la salud pélvica y calidad de vida de las mujeres tratadas de cáncer de mama. Estudio descriptivo.",
+      "categoria": "Suelo pélvico / Salud de la mujer",
+      "tipo": "poster",
+      "tipo_estudio": "estudio descriptivo",
+      "autor": "Paula Rangel de la Mata",
+      "etiquetas": [
+        "oncologia",
+        "suelo pélvico",
+        "calidad de vida"
+      ]
+    },
+    {
+      "id": "018_b06fdfc8-41ea-4634-9c58-36f46c2a44be",
+      "titulo": "La fuerza de prensión como predictor de recuperación funcional en paciente adulto mayor",
+      "categoria": "Geriatría",
+      "tipo": "poster",
+      "tipo_estudio": "estudio descriptivo",
+      "autor": "Alejandro Carmona Antoranz",
+      "etiquetas": [
+        "evaluación funcional",
+        "fuerza de prensión",
+        "recuperación"
+      ]
+    },
+    {
+      "id": "019_c3f320e4-059b-4661-8ee3-c1050e96d2be",
+      "titulo": "Fuerza de prensión como predictor de recuperación funcional en pacientes con deterioro cognitivo en rehabilitación geriátrica",
+      "categoria": "Geriatría",
+      "tipo": "poster",
+      "tipo_estudio": "estudio descriptivo",
+      "autor": "María Caballero Nahúm",
+      "etiquetas": [
+        "estado cognitivo",
+        "fuerza de prensión",
+        "evaluación funcional"
+      ]
+    },
+    {
+      "id": "020_a032c15b-aa0b-4807-9747-1f2005b8e184",
+      "titulo": "Cambios en la sequedad y la salud vaginal tras radiofrecuencia combinada con entrenamiento del suelo pélvico en supervivientes de cáncer de mama: resultados preliminares de un ensayo aleatorizado",
+      "categoria": "Suelo pélvico / Salud de la mujer",
+      "tipo": "comunicación",
+      "tipo_estudio": "ensayo clínico (ECA)",
+      "autor": "Irene Lázaro Navas",
+      "etiquetas": [
+        "oncologia",
+        "suelo pélvico",
+        "radiofrecuencia",
+        "ejercicio"
+      ]
+    }
+  ]
+}
