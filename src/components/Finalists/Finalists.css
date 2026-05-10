@@ -80,6 +80,14 @@
   color: var(--color-text-soft);
 }
 
+@media (max-width: 1050px) {
+  .finalists__grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 700px) {
   .finalists {
     padding: 3rem 1.25rem;
@@ -87,7 +95,15 @@
 
   .finalists__grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 1.25rem;
+  }
+
+  .finalists__card {
+    gap: 0.5rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-cream-dark);
+    border-radius: 8px;
+    padding: 1rem;
   }
 
   .finalists__img-wrap {
