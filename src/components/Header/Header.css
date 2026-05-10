@@ -27,6 +27,22 @@
   height: 80px;
 }
 
+@media (max-width: 900px) {
+  .header__logos {
+    gap: 1.5rem;
+  }
+
+  .header__logo {
+    height: 48px;
+    max-width: 28%;
+  }
+
+  .header__logo--center {
+    height: 62px;
+    max-width: 34%;
+  }
+}
+
 @media (max-width: 540px) {
   .header {
     padding: 1.5rem 1rem;
