@@ -39,12 +39,14 @@ function App() {
             categories={categories}
             selected={category}
             onSelect={setCategory}
+            label="Área"
           />
           <CategoryNav
             categories={tipos}
             selected={tipo}
             onSelect={setTipo}
             className="cat-nav--secondary"
+            label="Tipo"
           />
           <PosterGrid posters={filtered} />
         </section>
