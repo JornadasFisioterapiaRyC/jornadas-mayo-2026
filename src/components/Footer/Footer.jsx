@@ -4,10 +4,10 @@ function Footer() {
   return (
     <footer className="footer">
       <p className="footer__text">
-        Jornadas de Fisioterapia 2026
+        III Jornada Nacional de fisioterapia en atención hospitalaria
       </p>
       <p className="footer__sub">
-        Hospital Universitario Ramon y Cajal — Madrid
+        Hospital Universitario Ramón y Cajal — Madrid
       </p>
     </footer>
   )

@@ -12,7 +12,7 @@
 }
 
 .header__logo {
-  height: 44px;
+  height: 64px;
   width: auto;
   object-fit: contain;
   opacity: 0.85;
@@ -24,7 +24,7 @@
 }
 
 .header__logo--center {
-  height: 56px;
+  height: 80px;
 }
 
 @media (max-width: 540px) {

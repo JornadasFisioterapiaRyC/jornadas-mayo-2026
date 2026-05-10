@@ -1,19 +1,16 @@
 import './PosterCard.css'
 
 const categoryLabels = {
-  musculoesqueletica: 'Musculoesquelética',
+  musculoesqueletica: 'Traumatología',
   geriatria: 'Geriatría',
   neurologia: 'Neurología',
-  hospitalaria: 'Hospitalaria',
+  hospitalaria: 'Fisioterapia Hospitalaria',
   cardiorespiratoria: 'Cardiorrespiratorio',
-  transversal: 'Otros',
+  transversal: 'Humanización',
+  suelo_pelvico: 'Uroginecología',
 }
 
-const PLACEHOLDER_PDF = `${import.meta.env.BASE_URL}posters/001_mecanosensibilidad.pdf`
-
 function PosterCard({ poster, index }) {
-  const pdfHref = poster.file ?? PLACEHOLDER_PDF
-
   return (
     <article
       className="card"
@@ -21,32 +18,36 @@ function PosterCard({ poster, index }) {
     >
       {/* 1 · Badges */}
       <div className="card__header">
-        <span className={`card__tipo card__tipo--${poster.tipo}`}>
-          {poster.tipo === 'poster' ? 'Póster' : 'Comunicación'}
-        </span>
         <span className={`card__tag card__tag--${poster.category}`}>
           {categoryLabels[poster.category]}
         </span>
+        <span className={`card__tipo card__tipo--${poster.tipo}`}>
+          {poster.tipo === 'poster' ? 'Póster' : 'Comunicación'}
+        </span>
       </div>
 
-      {/* 2 · Título — flex:1, absorbe la variación de altura */}
+      {/* 2 · Título */}
       <h3 className="card__title">{poster.title}</h3>
 
-      {/* 3 · Descripción (tipo de estudio) */}
+      {/* 3 · Tipo de estudio */}
       <p className="card__meta">{poster.tipo_estudio}</p>
 
-      {/* 4 · Autor — siempre ocupa la misma altura aunque esté vacío */}
+      {/* 4 · Autor */}
       <p className="card__autor">{poster.autor ?? ''}</p>
 
-      {/* 5 · Enlace al PDF */}
-      <a
-        href={pdfHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="card__link"
-      >
-        Ver póster &rarr;
-      </a>
+      {/* 5 · Enlace a la imagen */}
+      {poster.file ? (
+        <a
+          href={poster.file}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card__link"
+        >
+          Ver póster &rarr;
+        </a>
+      ) : (
+        <span className="card__link card__link--disabled">Próximamente</span>
+      )}
 
       {/* 6 · Tags */}
       <ul className="card__etiquetas">

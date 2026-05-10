@@ -3,19 +3,20 @@ import './Hero.css'
 function Hero() {
   return (
     <section className="hero">
-      <span className="hero__eyebrow">Mayo 2026 — Madrid</span>
+      <span className="hero__eyebrow">21 de mayo 2026 — Madrid</span>
       <h1 className="hero__title">
-        Jornadas de
+        III Jornada Nacional De Fisioterapia
         <br />
-        Fisioterapia
+        En Atención Hospitalaria
       </h1>
       <p className="hero__subtitle">
-        Hospital Universitario Ramon y Cajal
+        Cuidar, innovar y conectar: el presente de la fisioterapia
       </p>
       <div className="hero__divider" />
       <p className="hero__description">
-        Repositorio oficial de los posters presentados en las jornadas.
-        Explora los trabajos organizados por tematica.
+        Hospital Universitario Ramón y Cajal
+        <br />
+        Repositorio oficial de pósteres y comunicaciones.
       </p>
     </section>
   )

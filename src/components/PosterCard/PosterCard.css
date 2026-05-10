@@ -32,12 +32,7 @@
   border: 1px solid var(--color-border);
   color: var(--color-text-muted);
   background: transparent;
-}
-
-.card__tipo--comunicacion {
-  color: #8b7355;
-  border-color: #c9b89a;
-  background: #faf6f0;
+  margin-left: auto;
 }
 
 .card__tag {
@@ -55,10 +50,11 @@
 .card__tag--hospitalaria       { color: var(--color-cat-hospitalaria);       background: var(--color-cat-hospitalaria-bg); }
 .card__tag--cardiorespiratoria { color: var(--color-cat-cardiorespiratoria); background: var(--color-cat-cardiorespiratoria-bg); }
 .card__tag--transversal        { color: var(--color-cat-transversal);        background: var(--color-cat-transversal-bg); }
+.card__tag--suelo_pelvico      { color: var(--color-cat-suelo_pelvico);      background: var(--color-cat-suelo_pelvico-bg); }
 
 /* 2 · Título — ocupa la fila 1fr; align-self:start ancla el texto arriba */
 .card__title {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
   font-weight: 400;
   line-height: 1.35;
@@ -108,6 +104,12 @@
 
 .card__link:hover {
   border-color: var(--color-dark);
+}
+
+.card__link--disabled {
+  color: var(--color-text-muted);
+  border-bottom-color: transparent;
+  cursor: default;
 }
 
 /* 6 · Tags — padding-bottom crea el espacio visual entre filas de tarjetas */

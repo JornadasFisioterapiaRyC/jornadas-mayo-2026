@@ -48,7 +48,7 @@ function App() {
           />
           <PosterGrid posters={filtered} />
         </section>
-        <Speakers speakers={speakers} />
+        {/* <Speakers speakers={speakers} /> */}
       </main>
       <Copyright />
       <Footer />
