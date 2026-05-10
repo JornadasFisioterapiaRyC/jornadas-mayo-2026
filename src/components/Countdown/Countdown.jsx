@@ -18,21 +18,17 @@ export default function Countdown({ targetDate }) {
       ref={ref}
       className={`countdown reveal${visible ? ' visible' : ''}`}
     >
-      {time.isPast ? (
-        <p className="countdown__past">Las jornadas ya han tenido lugar</p>
-      ) : (
-        <div className="countdown__grid">
-          {units.map(({ key, label }, i) => (
-            <div className="countdown__unit" key={key}>
-              {i > 0 && <span className="countdown__sep" aria-hidden="true">:</span>}
-              <span className="countdown__number">
-                {String(time[key]).padStart(2, '0')}
-              </span>
-              <span className="countdown__label">{label}</span>
-            </div>
-          ))}
-        </div>
-      )}
+      <div className="countdown__grid">
+        {units.map(({ key, label }, i) => (
+          <div className="countdown__unit" key={key}>
+            {i > 0 && <span className="countdown__sep" aria-hidden="true">:</span>}
+            <span className="countdown__number">
+              {String(time.isPast ? 0 : time[key]).padStart(2, '0')}
+            </span>
+            <span className="countdown__label">{label}</span>
+          </div>
+        ))}
+      </div>
     </section>
   )
 }
