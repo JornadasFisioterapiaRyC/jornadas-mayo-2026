@@ -35,7 +35,7 @@ export const posters = [
     title: "La respiración controlada mejora la variabilidad de la frecuencia cardíaca en adultos con mieloma múltiple",
     autor: 'Isidro Fernández López',
     category: 'cardiorespiratoria',
-    tipo_estudio: "* pendiente de revisar",
+    tipo_estudio: "ensayo clínico (ECA)",
     etiquetas: ['oncologia', 'respiratorio', 'variabilidad cardíaca', 'ejercicio terapéutico'],
     file: `${import.meta.env.BASE_URL}posters/004_aa647890-21ff-4efe-a8df-80d91dae7078.jpg`,
   },
